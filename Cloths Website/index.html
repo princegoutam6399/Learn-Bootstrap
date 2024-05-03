@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloths Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito Sans';
+        }
+
+        .footer {
+            background-color: #000000;
+        }
+
+        .product_item {
+            height: 300px;
+            position: relative;
+            background-position: center center;
+        }
+
+        .product_item .label {
+            color: #111111;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 4px 15px 2px;
+            background: #ffffff;
+            position: absolute;
+            left: 0;
+            top: 20px;
+        }
+
+        .header_top {
+            height: 40px;
+            display: flex;
+            line-height: 10px;
+            background-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- temprory navbar -->
+    <header>
+        <div class="header_top">
+            <div class="container-fluid ">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <span class="navbar-text text-white">
+                                Free Shipping, 30-day return or refund and guarantee.
+                            </span>
+                            <div class="collapse navbar-collapse" id="navbarText">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item text-white">
+                                        <a class="nav-link text-white" href="#">SIGN IN</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">FAQS</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            USD
+                                        </a>
+                                        <ul class="dropdown-menu bg-dark">
+                                            <li><a class="dropdown-item text-white" href="#">USD</a></li>
+                                            <li><a class="dropdown-item text-white" href="#">EUR</a></li>
+                                            <li><a class="dropdown-item text-white" href="#">INR</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar Start Here! -->
+        <div class="container-fluid bg-light border">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="col-lg-3 col-md-6">
+                        <a class="navbar-brand me-0" href="#">
+                            <a href="#"><img src="https://themewagon.github.io/malefashion/img/logo.png" alt=""></a>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse ms-5 navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto p-1 fw-bold me-5">
+                            <li class="nav-item me-4">
+                                <a class="nav-link active " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                        <div class="icon ms-auto">
+                            <i class="me-3 fa-solid fa-magnifying-glass"></i>
+                            <i class="me-3 fa-regular fa-heart"></i>
+                            <i class="me-1 fa-solid fa-bag-shopping"></i>
+                            <i class="me-3 fa-solid fa-dollar-sign"> 0.00</i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <!-- Navbar End Here! -->
+
+
+    <!-- Main Coontent Start Here! -->
+
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.pexels.com/photos/3932690/pexels-photo-3932690.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/669988/pexels-photo-669988.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- product section  -->
+    <section class="product_spad">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-lg-12">
+                    <ul class="filter_controls list-unstyled">
+                        <li data-filter="*">Best Sellers</li>
+                        <li data-filter=".new-arrivals" class="active mixitup-control-active">New Arrivals</li>
+                        <li data-filter=".hot-sales">Hot Sales</li>
+                    </ul>
+                </div>
+            </div> -->
+
+            <div class="row product_filter mt-3" id="MixItUp">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/18533669/pexels-photo-18533669/free-photo-of-camera-cotton-and-jeans.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/18533669/pexels-photo-18533669/free-photo-of-camera-cotton-and-jeans.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <span class="label">Sale</span>
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Jeans</h6>
+                        <!-- <a href="#" class="add-cart">+ Add To Cart</a> -->
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h5 class="mt-1">$70.50</h5>
+                        <!-- <div class="product_color">
+                            <label for="pc-1"><input type="radio" id="pc-1"></label>
+                            <label for="active black "><input type="radio" id="pc-2"></label>
+                            <label for="grey"><input type="radio" id="pc-3"></label>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/5693888/pexels-photo-5693888.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/5693888/pexels-photo-5693888.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <span class="label">New</span>
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Shorts</h6>
+                        <div class="rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h5 class="mt-1">$40.0</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/13094233/pexels-photo-13094233.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/13094233/pexels-photo-13094233.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Shirt</h6>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+                        <h5 class="mt-1">$67.44</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <span class="label">Trending</span>
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Running Shoes</h6>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h5 class="mt-1">$150.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row product_filter mt-3" id="MixItUp">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/7538122/pexels-photo-7538122.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/7538122/pexels-photo-7538122.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <span class="label">New</span>
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Sweet Shirts</h6>
+                        <!-- <a href="#" class="add-cart">+ Add To Cart</a> -->
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h5 class="mt-1">$70.50</h5>
+                        <!-- <div class="product_color">
+                            <label for="pc-1"><input type="radio" id="pc-1"></label>
+                            <label for="active black "><input type="radio" id="pc-2"></label>
+                            <label for="grey"><input type="radio" id="pc-3"></label>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://cdn.pixabay.com/photo/2017/08/10/08/28/dress-shirts-2619989_640.jpg"
+                        style="background-image: url(&quot;https://cdn.pixabay.com/photo/2017/08/10/08/28/dress-shirts-2619989_640.jpg&quot;);">
+                        <!-- <span class="label"></span> -->
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Shirts</h6>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h5 class="mt-1">$45.0</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/6342786/pexels-photo-6342786.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/6342786/pexels-photo-6342786.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <span class="label">New</span>
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Sweet Shirt</h6>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+                        <h5 class="mt-1">$90.40</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/19166244/pexels-photo-19166244/free-photo-of-man-hand-holding-shoes.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/19166244/pexels-photo-19166244/free-photo-of-man-hand-holding-shoes.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <span class="label">Sale</span>
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Party Wear, Shoes</h6>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h5 class="mt-1">$140.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row product_filter mt-3" id="MixItUp">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/5693891/pexels-photo-5693891.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/5693891/pexels-photo-5693891.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <span class="label">Sale</span>
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>T-shirt And Lower</h6>
+                        <!-- <a href="#" class="add-cart">+ Add To Cart</a> -->
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h5 class="mt-1">$70.50</h5>
+                        <!-- <div class="product_color">
+                            <label for="pc-1"><input type="radio" id="pc-1"></label>
+                            <label for="active black "><input type="radio" id="pc-2"></label>
+                            <label for="grey"><input type="radio" id="pc-3"></label>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/18533668/pexels-photo-18533668/free-photo-of-jeans-camera-sunglasses-and-shoes.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/18533668/pexels-photo-18533668/free-photo-of-jeans-camera-sunglasses-and-shoes.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <span class="label">New</span>
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Jeans</h6>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h5 class="mt-1">$40.0</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/8146450/pexels-photo-8146450.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/8146450/pexels-photo-8146450.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <!-- <span class="label">New</span> -->
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Sweet Shirt</h6>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+                        <h5 class="mt-1">$77.00</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product_item set-bg"
+                        data-setbg="https://images.pexels.com/photos/1461048/pexels-photo-1461048.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        style="background-image: url(&quot;https://images.pexels.com/photos/1461048/pexels-photo-1461048.jpeg?auto=compress&cs=tinysrgb&w=600&quot;);">
+                        <span class="label"></span>
+                    </div>
+                    <div class="product_text mt-4 ms-1">
+                        <h6>Running Shoes</h6>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h5 class="mt-1">$130.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram section start here  -->
+
+    <section class="instagram_spad">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="insta_pic">
+                        <div class="insta_item">
+                            <img src="https://images.pexels.com/photos/581087/pexels-photo-581087.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-50">
+                        </div>
+                        <!-- <div class="insta_item">
+                            <img src="https://images.pexels.com/photos/581087/pexels-photo-581087.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-50">
+                        </div>
+                        <div class="insta_item">
+                            <img src="https://images.pexels.com/photos/581087/pexels-photo-581087.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-50">
+                        </div> -->
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="insta_text">
+                        <h2>Instagram</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <h3>#Male_Fashion</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram section end here  -->
+
+
+    <!-- Main Coontent Start Here! -->
+
+    <!-- footer start Here -->
+    <footer class="footer mt-5">
+        <div class="container-fluid text-white">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer_about mt-4">
+                            <div class="footer_logo">
+                                <a href="#" class="text-black"><img
+                                        src="https://themewagon.github.io/malefashion/img/footer-logo.png" alt=""></a>
+                            </div>
+                            <p class="mt-4">The customer is at the heart of our unique business model, which includes
+                                design.</p>
+                            <a href="#"><img src="https://themewagon.github.io/malefashion/img/payment.png" alt=""
+                                    class="mt-3"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                        <div class="footer_widget mt-4">
+                            <h5>Shopping</h5>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3">Clothing Store</li>
+                                <li class="mb-3">Trending Shoes</li>
+                                <li class="mb-3">Accessories</li>
+                                <li class="mb-3">Sale</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="footer_widget mt-4">
+                            <h5>About Us</h5>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3">Contact us</li>
+                                <li class="mb-3">Payment Methods</li>
+                                <li class="mb-3">Delivary</li>
+                                <li class="mb-3">Return & Exchanges</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                        <div class="footer_widget mt-4">
+                            <h5>NEWSLETTER</h5>
+                            <div class="footer_newsletter mt-3">
+                                <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                                <form action="#">
+                                    <input type="text" placeholder="Your Email"
+                                        class="bg-dark mt-2 text-decoration-none">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center mt-3">
+                        <div class="footer_copyright_text">
+                            <hr>
+                            <p>Copyright © 20242020 All rights reserved | This template is made <i
+                                    class="fa-solid fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer start Here -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
